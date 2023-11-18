@@ -11,6 +11,10 @@ ul{
     padding: 0;
 }
 
+a{
+    text-decoration: none;
+}
+
 header{
     background-color: rgb(153, 176, 241);
     color: black;
@@ -37,7 +41,6 @@ nav{
 }
 
 a.logo{
-    text-decoration: none;
     color: black;
     font-size: 50px;
 }
@@ -91,14 +94,14 @@ a.logo{
 }
 
 main{
-    position: relative;
-    width: 100%;
-    height: 550px;
+    position: absolute;
     margin-top: 75px;
+    width: 100%;
 }
 
 .featured-video{
-    position: absolute;
+    width: 100%;
+    height: 550px;
 }
 
 .featured-video iframe{
@@ -107,7 +110,8 @@ main{
 }
  
 .listen-now-button{
-    margin: 15px 0;
+    position: relative;
+    margin: 15px auto;
     display: block;
     text-align: center;
     width: 90%;
@@ -115,6 +119,7 @@ main{
     background-color: white;
     border: 3px solid rgb(66, 66, 66);
     border-radius: 5px;
+    transition: 0.15s;
 }
 
 .listen-now-button a{
@@ -123,4 +128,93 @@ main{
     font-family: Roboto Mono;
     font-size: 28px;
     letter-spacing: 30px;
+}
+
+.listen-now-button:hover{
+    background-color: rgb(153, 176, 241);
+    border: 3px solid rgb(66, 66, 66);
+}
+
+.listen-now-button:active{
+    background-color: white;
+}
+
+.featured-merch{
+    margin-top: 85px;
+    background-color: rgb(153, 176, 241);
+    width: 100%;
+    height: 780px;
+}
+
+h1{
+    margin: 0px;
+    padding-top: 40px;
+    color: black;
+    font-family: Radio Canada;
+    text-align: center;
+    font-size: 80px;
+    letter-spacing: 50px;
+}
+
+.merch-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0px;
+}
+
+.merch-items img{
+    display: flex;
+    justify-content: flex-start;
+    width: 420px;
+    height: auto;
+}
+
+.merch-details{
+    margin: 0px;
+    padding: 0px;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+.merch-details span{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.more-merch-button{
+    margin: 75px auto;
+    display: block;
+    text-align: center;
+    width: 90%;
+    height: 45px;
+    background-color: rgb(153, 176, 241);
+    border: 3px solid rgb(66, 66, 66);
+    border-radius: 5px;
+    transition: 0.15s;
+}
+
+.more-merch-button a{
+    text-decoration: none;
+    color: black;
+    font-family: Roboto Mono;
+    font-size: 28px;
+    letter-spacing: 30px;
+}
+
+.more-merch-button:hover{
+    background-color: white;
+    border: 3px solid rgb(66, 66, 66);
+}
+
+.more-merch-button:active{
+    background-color: rgb(153, 176, 241);
+}
+
+.tour-title{
+    text-align: left;
 }
