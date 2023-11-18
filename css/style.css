@@ -1,0 +1,12 @@
+header{
+    background-color: bisque;
+}
+
+nav{
+    display: flex;
+}
+
+.socialmedia-buttons{
+    width: 100px;
+    height: 100px;
+}
