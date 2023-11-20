@@ -1,48 +1,42 @@
-/*Setting default for every respective element*/
-body{
-    margin: 0px;
-    padding: 0px;
-    font-family: "Roboto Mono";
-}
 
-
-ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-a{
-    text-decoration: none;
-}
-
-/*Navigation bar*/
-#nav-container { /*Navigation background and making flex container*/
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+/*header{
     background-color: rgb(153, 176, 241);
     color: black;
+    margin: 0 auto;
     position: fixed;
     line-height: 75px;
     width: 100%;
-    z-index: 100; /*Pushing the nav to the top always*/
+    z-index: 1000;
 }
 
-/*Adjusting Nav Buttons for desktop view*/
-.navigation-buttons{
-    flex: 1;
+nav{
     display: flex;
-    font-size: 17px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 50px 0 50px;
+}
+
+.logo{
+    font-family: Kristi;
+    text-align: center;
+    justify-content: center;
+    flex: 1 1 0;
+}
+
+a.logo{
+    color: black;
+    font-size: 50px;
+}
+
+.navigation-buttons{
+    font-family: "Roboto Mono";
+    font-size: 16px;
+    display: flex;
     justify-content: flex-start;
-    padding-left: 40px; /*Give it some space from the side*/
+    flex: 1 1 0;
 }
 
-.navigation-buttons li{
-    margin-left: 5px; /*Make it a bit more spaced out*/
-}
-
-/*Adding design to navigation buttons*/
 .navigation-buttons li{
     transition: 0.15s;
 }
@@ -67,105 +61,22 @@ a{
     font-weight: bolder;
 }
 
-/*Adjusting logo and adding design*/
-.logo{
-    font-family: Kristi;
-    text-align: center;
-    justify-content: center;
-    padding: 0 20px;
-}
-
-a.logo{
-    color: black;
-    font-size: 50px;
-}
-
-/*Adjusting Social Media Icons*/
 .socialmedia-buttons{
-    flex: 1;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding-right: 40px; /*Give it some space from the side*/
+    margin: 0;
+    flex: 1 1 0;
 }
 
 .socialmedia-buttons img {
     display: flex;
-    align-items: center;
-    margin-left: 15px;
     width: 35px;
     height: 35px;
+    margin: 0 7px;
+    align-items: center;
 }
-
-/*Making the hamburger invisible on desktop*/
-.hamburger{
-    display: none;
-}
-
-/*Responsive - for mobile*/
-@media (max-width: 900px){
-    #nav-container { 
-        text-align: center;
-        margin: auto;
-        height: 65px; /*Make Nav Bar shorter in height*/
-        line-height: 65px;
-    }
-
-    /*Changing the position of the buttons*/
-    .navigation-buttons{
-        margin-left: -100%;
-        margin-top: 100px;
-    }
-    
-    .socialmedia-buttons{
-        display: none;
-    }
-
-    /*Adjust the logo to make it centered and the right size*/
-    .logo{
-        position: absolute;
-        padding: 0 20px;
-    }
-
-    a.logo{
-        color: black;
-        font-size: 45px;
-    }
-
-    /*Display the hamburger icon*/
-    .hamburger{
-        display: block;
-        width: 35px;
-        height: 35px;
-        cursor: pointer;
-        margin: auto 40px 17px auto;
-        background: none;
-        border: none;
-    }
-
-    .bar{
-        display: block;
-        width: 35px;
-        height: 2px;
-        background-color: black;
-        margin: 7px auto;
-        transition: 0.3s;
-    }
-
-    /*Make the hamburger icon responsive when you click it so it turns into an X*/
-    .hamburger.active .bar:nth-child(2){
-        opacity:0;
-    }
-
-    .hamburger.active .bar:nth-child(1){
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    .hamburger.active .bar:nth-child(3){
-        transform: translateY(-8px) rotate(-45deg);
-    }
-}
-
+*/
 
 main{
     position: absolute;

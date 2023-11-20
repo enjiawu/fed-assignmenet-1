@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="js/main.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kristi&family=Radio+Canada:wght@700&family=Roboto+Mono:wght@300;500&display=swap" rel="stylesheet">
@@ -13,7 +14,7 @@
 
 <body>
     <header>
-        <nav>
+        <nav id = "nav-container">
             <ul class = "navigation-buttons">
                 <li><a href="html/tour.html">Tour</a></li>
                 <li><a href="html/music.html">Music</a></li>
@@ -31,6 +32,12 @@
                 <li><a href="https://open.spotify.com/artist/7gW0r5CkdEUMm42w9XpyZO" target="_blank"><img src="images/socialmedia/spotify.png" alt="Spotify"></a></li>
                 <li><a href="https://music.apple.com/us/artist/laufey/1504424880" target="_blank"><img src="images/socialmedia/applemusic.png" alt="Apple Music"></a></li>
             </ul>
+
+            <button class = "hamburger">
+                <div class = "bar"></div>
+                <div class = "bar"></div>
+                <div class = "bar"></div>
+            </button>
         </nav>
     </header>
 
@@ -45,21 +52,21 @@
             <h1 class = "merch-title">MERCH</h1>
             <div class = "featured-merch-container">
                 <div class = "merch-items">
-                    <a href="#" target="_blank"><img src="/images/merch/laufeymerch-1.webp" alt="Bewitched Vinyl"></a>
+                    <a href="#" target="_blank"><img src="images/merch/laufeymerch-1.webp" alt="Bewitched Vinyl"></a>
                     <p class = "merch-details">
                         <span>Bewitched Vinyl</span><br>
                         SGD$49.99
                     </p>
                 </div>
                 <div class = "merch-items">
-                    <a href="#" target="_blank"><img src="/images/merch/laufeymerch-2.webp" alt="Bewitched Cassette"></a>
+                    <a href="#" target="_blank"><img src="images/merch/laufeymerch-2.webp" alt="Bewitched Cassette"></a>
                     <p class = "merch-details">
                         <span>Bewitched Cassett</span><br>
                         SGD$19.99
                     </p>
                 </div>
                 <div class = "merch-items">
-                    <a href="#" target="_blank"><img src="/images/merch/laufeymerch-3.webp" alt="Bewitched Sheet Music"></a>
+                    <a href="#" target="_blank"><img src="images/merch/laufeymerch-3.webp" alt="Bewitched Sheet Music"></a>
                     <p class = "merch-details">
                         <span>Bewitched Sheet Music</span><br>
                         SGD$9.99
@@ -75,7 +82,7 @@
         <section class = "featured-tour">
             <h1 class = "tour-title">TOUR</h1>
             <div class = "featured-tour-container">
-                <img src="/images/tour/feature-image.png" alt="Laufey on Tour">
+                <img src="images/tour/feature-image.png" alt="Laufey on Tour">
                 <div class = "tour-items">
                     <div class = "tour-date-details">
                         <p class = "tour-date">
@@ -146,16 +153,16 @@
             <div class = "featured-music-container">
                 <ul class = "featured-music-items">
                     <li class = "music-item">
-                        <a href="#" target="_blank"><img src="/images/music/laufeymusic-1.webp" alt="Bewitched Album">
+                        <a href="#" target="_blank"><img src="images/music/laufeymusic-1.webp" alt="Bewitched Album">
                     </li>
                     <li class = "music-item">
-                        <a href="#" target="_blank"><img src="/images/music/laufeymusic-1.webp" alt="Everything I Know About Love Album">
+                        <a href="#" target="_blank"><img src="images/music/laufeymusic-1.webp" alt="Everything I Know About Love Album">
                     </li>
                     <li class = "music-item">
-                        <a href="#" target="_blank"><img src="/images/music/laufeymusic-1.webp" alt="A Very Laufey Holiday! Album">
+                        <a href="#" target="_blank"><img src="images/music/laufeymusic-1.webp" alt="A Very Laufey Holiday! Album">
                     </li>
                     <li class = "music-item">
-                        <a href="#" target="_blank"><img src="/images/music/laufeymusic-1.webp" alt="A Night To Remember Album">
+                        <a href="#" target="_blank"><img src="images/music/laufeymusic-1.webp" alt="A Night To Remember Album">
                     </li>
                 </ul>
             </div>
