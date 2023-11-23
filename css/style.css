@@ -27,13 +27,6 @@ h1{
     letter-spacing: 40px;
 }
 
-/*Mobile view*/
-@media (max-width: 900px){
-    h1{
-        font-size: 60px;
-    }
-}
-
 /*Navigation bar*/
 #nav-container { /*Navigation background and making flex container*/
     display: flex;
@@ -121,89 +114,12 @@ a#main-logo{
     display: none;
 }
 
-/*Responsive - for mobile*/
-@media (max-width: 900px){
-    #nav-container {
-        flex-direction: column;
-        text-align: center;
-        justify-content: space-between;
-        margin: auto;
-        height: 65px; /*Make Nav Bar shorter in height*/
-        line-height: 65px;
-        transition: 0.3s;
-    }
-
-    /*Changing the position of the buttons*/
-    #navigation-buttons{
-        display: none; /*Making it invisible until button is clicked then display will change to flex*/
-        margin-top: 25px;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-left: 0;
-        flex: 2;
-        order: 2;
-    }
-
-    #nav-socialmedia-buttons{
-        display: none; /*Making it invisible until button is clicked then display will change to flex*/
-        flex:1;
-        justify-content: center;
-        padding: 0;
-        order: 3;
-    }
-
-    #nav-socialmedia-buttons img{
-        margin: 0 8px;
-    }
-
-    /*Adjust the logo to make it centered and the right size*/
-    #main-logo{
-        position: absolute;
-        top: 35px;
-        left: 50%;
-        transform: translate(-50%, -50%); /*Used to center the logo*/
-    }
-
-    a#main-logo{
-        color: black;
-        font-size: 45px;
-    }
-
-    /*Display the hamburger icon*/
-    .hamburger{
-        display: block; /*Making it visible*/
-        width: 35px;
-        height: 35px;
-        cursor: pointer;
-        margin: 12px 40px 17px auto;
-        background: none;
-        border: none;
-        order: 1;
-    }
-
-    .bar{
-        display: block;
-        width: 35px;
-        height: 2px;
-        background-color: black;
-        margin: 7px auto;
-    }
-}
-
 /*Start of website content*/
-
 /*Desktop view*/
 main{
     margin-top: 75px;
     width: 100%;
     height: auto;
-}
-
-@media (max-width: 900px){
-    main{
-        margin-top: 65px;
-    }
 }
 
 /*Featured Video Section*/
@@ -250,31 +166,6 @@ main{
     background-color: white;
 }
 
-
-/*Mobile view*/
-@media (max-width: 900px){
-    main{
-        margin-top: 65px;
-    }
-
-    .listen-now-button{
-        line-height: 40px;
-        font-size: 22px;
-        bottom: -65px;
-        letter-spacing: 20px;
-    }
-}
-
-/*For even smaller mobile views*/
-@media (max-width: 390px){
-    .listen-now-button{
-        line-height: 40px;
-        font-size: 19px;
-        bottom: -65px;
-        letter-spacing: 12px;
-    }
-}  
- 
 /*Featured merch section*/
 .featured-merch{
     margin-top: 85px;
@@ -342,42 +233,7 @@ main{
     background-color: rgb(153, 176, 241);
 }
 
-/*Mobile view*/
-@media (max-width: 900px){
-    .featured-merch{
-        height: auto;
-        max-height: 12000px;
-        padding-top: 15px;
-    }
-
-    .featured-merch-container{ /*Make the merch items wrap and stay in the middle*/
-        flex-wrap: wrap;
-        justify-content: center;
-    }    
-
-    .merch-items{ /*Change the size of the merch items*/
-        flex: 0 40%;
-        margin-bottom: 15px;
-    }
-
-    .merch-details{ /*Make the font smaller*/
-        font-size: 17px;
-    }
-    
-    .merch-details span{
-        font-size: 24px;
-    }
-    
-    .more-merch-button{
-        line-height: 40px;
-        font-size: 22px;
-        bottom: -65px;
-        letter-spacing: 20px;
-    }
-}
-
 /*Featured Tour Section*/
-/*Desktop view*/
 .featured-tour{
     background-color: white;
     margin-top: 10px;
@@ -487,48 +343,6 @@ main{
     background-color: white;
 }
 
-/*Mobile view*/
-@media (max-width: 992px){ /*Get rid of the image*/
-    .featured-tour-container img{
-        display: none;
-    }
-}
-
-@media (max-width: 728px){ /*Make the tour date details centered*/
-    .featured-tour-container{
-        justify-content: center;
-        align-items: center;
-        margin-top: 65px;
-    }
-
-    .tour-title{
-        text-align: center;
-    }
-
-    .tour-date-details{
-        flex-basis: 25%;
-        margin-bottom: 40px;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .tour-date-details p{
-        text-align: center;
-        margin-bottom: 10px;
-    }
-
-    .buy-tickets-button{
-        margin-left: 0;
-    }
-
-    .see-more-button{
-        line-height: 40px;
-        font-size: 22px;
-        bottom: -65px;
-        letter-spacing: 20px;
-    }
-}
-
 /*Featured Music Section*/
 .featured-music{
     margin-top: 60px;
@@ -629,10 +443,168 @@ a#footer-logo{
 
 /*Mobile view*/
 @media (max-width: 900px){
+    h1{
+        font-size: 60px;
+    }
+
+    #nav-container {
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-between;
+        margin: auto;
+        height: 65px; /*Make Nav Bar shorter in height*/
+        line-height: 65px;
+        transition: 0.3s;
+    }
+
+    /*Changing the position of the buttons*/
+    #navigation-buttons{
+        display: none; /*Making it invisible until button is clicked then display will change to flex*/
+        margin-top: 25px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0;
+        flex: 2;
+        order: 2;
+    }
+
+    #nav-socialmedia-buttons{
+        display: none; /*Making it invisible until button is clicked then display will change to flex*/
+        flex:1;
+        justify-content: center;
+        padding: 0;
+        order: 3;
+    }
+
+    #nav-socialmedia-buttons img{
+        margin: 0 8px;
+    }
+
+    /*Adjust the logo to make it centered and the right size*/
+    #main-logo{
+        position: absolute;
+        top: 35px;
+        left: 50%;
+        transform: translate(-50%, -50%); /*Used to center the logo*/
+    }
+
+    a#main-logo{
+        color: black;
+        font-size: 45px;
+    }
+
+    /*Display the hamburger icon*/
+    .hamburger{
+        display: block; /*Making it visible*/
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+        margin: 12px 40px 17px auto;
+        background: none;
+        border: none;
+        order: 1;
+    }
+
+    .bar{
+        display: block;
+        width: 35px;
+        height: 2px;
+        background-color: black;
+        margin: 7px auto;
+    }
+
     #footer-buttons li a{
         padding: 0px 8px;
     }
+
+    /*Main section*/
+    main{
+        margin-top: 65px;
+    }
+
+    /*Featured video section*/
+    .listen-now-button{
+        line-height: 40px;
+        font-size: 22px;
+        bottom: -65px;
+        letter-spacing: 20px;
+    }
+
+    /*Featured merch section*/
+    .featured-merch{
+        height: auto;
+        max-height: 12000px;
+        padding-top: 15px;
+    }
+
+    .featured-merch-container{ /*Make the merch items wrap and stay in the middle*/
+        flex-wrap: wrap;
+        justify-content: center;
+    }    
+
+    .merch-items{ /*Change the size of the merch items*/
+        flex: 0 40%;
+        margin-bottom: 15px;
+    }
+
+    .merch-details{ /*Make the font smaller*/
+        font-size: 17px;
+    }
+    
+    .merch-details span{
+        font-size: 24px;
+    }
+    
+    .more-merch-button{
+        line-height: 40px;
+        font-size: 22px;
+        bottom: -65px;
+        letter-spacing: 20px;
+    }
 }
+
+@media (max-width: 992px){ /*Get rid of the image*/
+    .featured-tour-container img{
+        display: none;
+    }
+}
+
+@media (max-width: 728px){ /*Make the tour date details centered*/
+    .featured-tour-container{
+        justify-content: center;
+        align-items: center;
+        margin-top: 65px;
+    }
+
+    .tour-title{
+        text-align: center;
+    }
+
+    .tour-date-details{
+        flex-basis: 25%;
+        margin-bottom: 40px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tour-date-details p{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .buy-tickets-button{
+        margin-left: 0;
+    }
+
+    .see-more-button{
+        line-height: 40px;
+        font-size: 22px;
+        bottom: -65px;
+        letter-spacing: 20px;
+    }
+}
+
 
 @media (max-width: 450px){
     #footer-buttons li a{
@@ -640,3 +612,15 @@ a#footer-logo{
         font-size: 14px;
     }
 }
+
+
+/*For even smaller mobile views*/
+@media (max-width: 390px){
+    .listen-now-button{
+        line-height: 40px;
+        font-size: 19px;
+        bottom: -65px;
+        letter-spacing: 12px;
+    }
+}  
+ 
