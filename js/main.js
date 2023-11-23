@@ -1,7 +1,7 @@
 //Making the hamburger responsive
 function hamburgerClick(){ //Making the hamburger menu pop out when clicked
     const navigationButtons = document.getElementById("navigation-buttons");  //Getting Navigation Buttons
-    const socialmediaButtons = document.getElementById("socialmedia-buttons"); //Getting Social Media Buttons
+    const socialmediaButtons = document.getElementById("nav-socialmedia-buttons"); //Getting Social Media Buttons
     const NavContainer = document.getElementById("nav-container"); //Getting the hamburger nav container
 
     if (navigationButtons.style.display === "flex" && socialmediaButtons.style.display === "flex"){ //If both the navigation and social media buttons are visible
@@ -21,7 +21,7 @@ function hamburgerClick(){ //Making the hamburger menu pop out when clicked
 //Making sure that the hamburger button doesnt make the display for the buttons none when the screen is expanded
 window.addEventListener("resize", function(){
     const navigationButtons = document.getElementById("navigation-buttons");  //Getting Navigation Buttons
-    const socialmediaButtons = document.getElementById("socialmedia-buttons"); //Getting Social Media Buttons
+    const socialmediaButtons = document.getElementById("nav-socialmedia-buttons"); //Getting Social Media Buttons
     const NavContainer = document.getElementById("nav-container"); //Getting the hamburger nav container
 
 

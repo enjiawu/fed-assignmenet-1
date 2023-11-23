@@ -3,8 +3,9 @@ body{
     margin: 0px;
     padding: 0px;
     font-family: "Roboto Mono";
+    display: flex;
+    flex-direction: column;
 }
-
 
 ul{
     list-style-type: none;
@@ -86,14 +87,14 @@ h1{
 }
 
 /*Adjusting logo and adding design*/
-.logo{
+#main-logo{
     font-family: Kristi;
     text-align: center;
     justify-content: center;
     padding: 0 20px;
 }
 
-a.logo{
+a#main-logo{
     color: black;
     font-size: 50px;
 }
@@ -139,12 +140,12 @@ a.logo{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 0;
+        padding-left: 0;
         flex: 2;
         order: 2;
     }
 
-    #socialmedia-buttons{
+    #nav-socialmedia-buttons{
         display: none; /*Making it invisible until button is clicked then display will change to flex*/
         flex:1;
         justify-content: center;
@@ -152,15 +153,19 @@ a.logo{
         order: 3;
     }
 
+    #nav-socialmedia-buttons img{
+        margin: 0 8px;
+    }
+
     /*Adjust the logo to make it centered and the right size*/
-    .logo{
+    #main-logo{
         position: absolute;
         top: 35px;
         left: 50%;
         transform: translate(-50%, -50%); /*Used to center the logo*/
     }
 
-    a.logo{
+    a#main-logo{
         color: black;
         font-size: 45px;
     }
@@ -190,9 +195,15 @@ a.logo{
 
 /*Desktop view*/
 main{
-    position: absolute;
     margin-top: 75px;
     width: 100%;
+    height: auto;
+}
+
+@media (max-width: 900px){
+    main{
+        margin-top: 65px;
+    }
 }
 
 /*Featured Video Section*/
@@ -539,4 +550,94 @@ main{
     flex-direction: row;
     justify-content: space-between;
     flex: 1 1 40%;
+}
+
+.featured-music,.featured-videos, #newsletter{
+    display: none;
+}
+
+/*Footer*/
+#footer-container { /*Footer background and making flex container*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(153, 176, 241);
+    color: black;
+    line-height: 50px;
+    width: 100%;
+    padding: 60px 0 30px 0;
+}
+
+/*Adjusting Nav Buttons for desktop view*/
+#footer-buttons{
+    display: flex;
+    flex: 1;
+    font-size: 17px;
+    justify-content: center;
+}
+
+/*Adding design to navigation buttons*/
+#footer-buttons li{
+    transition: 0.15s;
+    padding: 0 10px;
+}
+
+#footer-buttons li a{
+    text-decoration: none;
+    color: black;
+    padding: 0px 15px;
+    transition: 0.15s;
+    font-weight: 500;
+}
+
+#footer-buttons li a:active{
+    color:white;
+    font-weight: bolder;
+}
+
+#footer-socialmedia-buttons{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+#footer-socialmedia-buttons img {
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+    width: 35px;
+    height: 35px;
+}
+
+#copyright{
+    text-align: center;
+}
+
+/*Adjusting logo and adding design*/
+#footer-logo{
+    font-family: Kristi;
+    text-align: center;
+    justify-content: center;
+}
+
+a#footer-logo{
+    color: black;
+    font-size: 50px;
+}
+
+/*Mobile view*/
+@media (max-width: 900px){
+    #footer-buttons li a{
+        padding: 0px 8px;
+    }
+}
+
+@media (max-width: 450px){
+    #footer-buttons li a{
+        padding: 0px 5px;
+        font-size: 14px;
+    }
+}
 }
