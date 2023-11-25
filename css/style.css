@@ -210,7 +210,7 @@ a#footer-logo{
 
 
 /*General Button Design for featured componenets in home page*/
-.listen-now-button, .more-merch-button, .see-more-button, .more-music-button{
+.listen-now-button, .more-merch-button, .see-more-button, .more-music-button, .watch-laufey-now-button{
     display: flex;
     justify-content: center;
     text-align: center;
@@ -228,12 +228,12 @@ a#footer-logo{
     font-weight: 500;
 }
 
-.listen-now-button:hover, .see-more-button:hover{
+.listen-now-button:hover, .see-more-button:hover, .watch-laufey-now-button:hover{
     background-color: rgb(153, 176, 241);
     border: 3px solid rgb(66, 66, 66);
 }
 
-.listen-now-button:active, .see-more-button:active{
+.listen-now-button:active, .see-more-button:active, .watch-laufey-now-button:active{
     background-color: white;
 }
 
@@ -580,6 +580,45 @@ label{
     outline: none;
 }
 
+/*About Page*/
+#featured-about-photos{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 7px; /*Give the images space in between*/
+}
+
+#featured-about-photos img{
+    width: 100%;
+    height: auto;
+    max-height: 770px; /*Make sure all images equal height*/
+    object-fit: cover;
+}
+
+#about-laufey-info{
+    width: 65%;
+    margin: 70px auto;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+#featured-about-video{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+
+#featured-about-video iframe{
+    margin: auto;
+    width: 60%;
+    height: 450px;
+}
+
+.watch-laufey-now-button{
+    width: 75%;
+    margin: 30px auto 80px auto;
+}
 
 /*Mobile view*/
 @media (max-width: 900px){
@@ -668,7 +707,7 @@ label{
     }
 
     /*Changing all the button font size to fit*/
-    .listen-now-button, .more-merch-button, .see-more-button, .more-music-button{
+    .listen-now-button, .more-merch-button, .see-more-button, .more-music-button, .watch-laufey-now-button{
         line-height: 40px;
         font-size: 22px;
         bottom: -65px;
@@ -728,6 +767,17 @@ label{
     #newsletter-form #submit{
         width: 350px;
     }
+
+    #about-laufey-info{
+        font-size: 15px;
+    }
+    
+    #featured-about-video iframe{
+        margin: auto;
+        width: 60%;
+        height: 250px;
+    }
+
 }
 
 @media (max-width: 992px){ /*Get rid of the image*/
