@@ -1,3 +1,4 @@
+//Navigation Bar
 //Making the hamburger responsive
 function hamburgerClick(){ //Making the hamburger menu pop out when clicked
     const navigationButtons = document.getElementById("navigation-buttons");  //Getting Navigation Buttons
@@ -17,7 +18,6 @@ function hamburgerClick(){ //Making the hamburger menu pop out when clicked
         NavContainer.style.backgroundColor = "rgb(127, 142, 184)"; //Changing the color to a darker shade
     }
 }
-
 //Making sure that the hamburger button doesnt make the display for the buttons none when the screen is expanded
 window.addEventListener("resize", function(){
     const navigationButtons = document.getElementById("navigation-buttons");  //Getting Navigation Buttons
@@ -25,7 +25,7 @@ window.addEventListener("resize", function(){
     const NavContainer = document.getElementById("nav-container"); //Getting the hamburger nav container
 
 
-    if (window.innerWidth > 900){
+    if (window.innerWidth > 900){ /*Check if window width is greater than 900px*/
         navigationButtons.style.display = "flex"; //Showing the navigation buttons
         socialmediaButtons.style.display = "flex"; //Showing the social media buttons
         NavContainer.style.height = "75px"; //Making sure the height is 75px
@@ -38,4 +38,3 @@ window.addEventListener("resize", function(){
         NavContainer.style.backgroundColor = "rgb(153, 176, 241)"; //Changing the color back to the original
     }
 });
-

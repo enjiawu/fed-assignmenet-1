@@ -43,7 +43,7 @@
 
     <main>
         <div class = "featured-video">
-            <iframe src="https://www.youtube.com/embed/lSD_L-xic9o?si=01YDSaUPALRLnz-w&amp;autoplay=1&mute=1&rel=0&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/lSD_L-xic9o?si=01YDSaUPALRLnz-w&amp;autoplay=1&mute=1&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <a class = "listen-now-button" href = "https://laufey.ffm.to/bewitched" target="_blank">LISTEN NOW</a>
         </div>
     
@@ -73,15 +73,15 @@
                     </p>
                 </div>
             </div>
-                <a class = "more-merch-button" href = "html/merch.html"> 
-                    MORE MERCH
-                </a>
+            <a class = "more-merch-button" href = "html/merch.html"> 
+                MORE MERCH
+            </a>
             
         </section>
 
-        <section class = "featured-tour">
+        <section id = "featured-tour">
             <h1 class = "tour-title">TOUR</h1>
-            <div class = "featured-tour-container">
+            <div id = "featured-tour-container">
                 <img src="images/tour/feature-image.png" alt="Laufey on Tour">
                 <div class = "tour-items">
                     <div class = "tour-date-details">
@@ -148,45 +148,48 @@
             </div>
         </section>
 
-        <section class = "featured-music">
+        <section id = "featured-music">
             <h1 class = "music-title">MUSIC</h1>
-            <div class = "featured-music-container">
-                <ul class = "featured-music-items">
-                    <li class = "music-item">
-                        <a href="#" target="_blank"><img src="images/music/bewitched.jpeg" alt="Bewitched Album"></a>
-                    </li>
-                    <li class = "music-item">
-                        <a href="#" target="_blank"><img src="images/music/everything-i-know-about-love.jpeg" alt="Everything I Know About Love Album"></a>
-                    </li>
-                    <li class = "music-item">
-                        <a href="#" target="_blank"><img src="images/music/a-very-laufey-holiday.jpeg" alt="A Very Laufey Holiday! Album"></a>
-                    </li>
-                    <li class = "music-item">
-                        <a href="#" target="_blank"><img src="images/music/a-night-to-remember.jpg" alt="A Night To Remember Album"></a>
-                    </li>
-                </ul>
-                <a class = "more-music-button" href = "html/music.html"> 
-                    MORE MUSIC
-                </a>
+            <div id = "featured-music-wrapper">
+                <div class = "featured-music-items-carousell"> <!--Need to repeat the images for seamless loop-->
+                    <a href="#" target="_blank"><img src="images/music/bewitched.jpeg" alt="Bewitched Album"></a>
+                    <a href="#" target="_blank"><img src="images/music/everything-i-know-about-love.jpeg" alt="Everything I Know About Love Album"></a>
+                    <a href="#" target="_blank"><img src="images/music/a-very-laufey-holiday.jpeg" alt="A Very Laufey Holiday! Album"></a>
+                    <a href="#" target="_blank"><img src="images/music/a-night-to-remember.jpg" alt="A Night To Remember Album"></a>
+                </div>
+                <div class = "featured-music-items-carousell">
+                    <a href="#" target="_blank"><img src="images/music/bewitched.jpeg" alt="Bewitched Album"></a>
+                    <a href="#" target="_blank"><img src="images/music/everything-i-know-about-love.jpeg" alt="Everything I Know About Love Album"></a>
+                    <a href="#" target="_blank"><img src="images/music/a-very-laufey-holiday.jpeg" alt="A Very Laufey Holiday! Album"></a>
+                    <a href="#" target="_blank"><img src="images/music/a-night-to-remember.jpg" alt="A Night To Remember Album"></a>
+                </div>
+                <div class = "featured-music-items-carousell">
+                    <a href="#" target="_blank"><img src="images/music/bewitched.jpeg" alt="Bewitched Album"></a>
+                    <a href="#" target="_blank"><img src="images/music/everything-i-know-about-love.jpeg" alt="Everything I Know About Love Album"></a>
+                    <a href="#" target="_blank"><img src="images/music/a-very-laufey-holiday.jpeg" alt="A Very Laufey Holiday! Album"></a>
+                    <a href="#" target="_blank"><img src="images/music/a-night-to-remember.jpg" alt="A Night To Remember Album"></a>
+                </div>
             </div>
+            <a class = "more-music-button" href = "html/music.html"> 
+                MORE MUSIC
+            </a>
         </section>
 
-        <section class = "featured-videos">
+        <section id = "featured-videos">
             <h1 class = "videos-title">VIDEOS</h1>
-            <div class = "featured-videos-container">
-                <ul class = "featured=videos-items">
-                    <li class = "video-item">
-                        <iframe  src="https://www.youtube.com/embed/lSD_L-xic9o?si=9SP8mvfur13lxUok&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </li>
-                    <li class = "video-item">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/KUNcP1H7Wi4?si=IbpnPXdK4eJZMkLF&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </li>
-                    <li class = "video-item">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/z2PzxLwA4rM?si=NZvHhBS_fOPgGl9A&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </li>
-                </ul>
+            <div id = "featured-videos-wrapper">
+                <div class = "featured-videos-carousell">
+                    <iframe src="https://www.youtube.com/embed/lSD_L-xic9o?si=9SP8mvfur13lxUok&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/KUNcP1H7Wi4?si=IbpnPXdK4eJZMkLF&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/z2PzxLwA4rM?si=NZvHhBS_fOPgGl9A&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class = "featured-videos-carousell">
+                    <iframe src="https://www.youtube.com/embed/lSD_L-xic9o?si=9SP8mvfur13lxUok&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/KUNcP1H7Wi4?si=IbpnPXdK4eJZMkLF&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/z2PzxLwA4rM?si=NZvHhBS_fOPgGl9A&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
             </div>
-            <a class = "see-more-button" href = "https://www.youtube.com/channel/UChpKl3waLmccNeYH9LGYjUQ"> 
+            <a class = "see-more-button" target="_blank" href = "https://www.youtube.com/channel/UChpKl3waLmccNeYH9LGYjUQ"> 
                 SEE MORE
             </a>
         </section>
