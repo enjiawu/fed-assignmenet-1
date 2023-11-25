@@ -401,6 +401,9 @@ main{
 }
 
 #newsletter-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 40px;
 }
 
@@ -526,6 +529,10 @@ a#footer-logo{
         font-size: 60px;
     }
 
+    h2{
+        font-size: 30px;
+    }
+
     #nav-container {
         flex-direction: column;
         text-align: center;
@@ -646,6 +653,23 @@ a#footer-logo{
         width: 500px;
         height: 300px;
     }
+
+    /*Newsletter section*/
+    #newsletter-form{
+        flex-direction: column;
+    }
+
+    #newsletter-form #email{
+        margin-bottom: 20px;
+    }
+    
+    #newsletter-form #email::placeholder{
+        text-align: center;
+    }
+    
+    #newsletter-form #submit{
+        width: 350px;
+    }
 }
 
 @media (max-width: 992px){ /*Get rid of the image*/
@@ -680,6 +704,7 @@ a#footer-logo{
     .buy-tickets-button{
         margin-left: 0;
     }
+
 }
 
 
@@ -687,6 +712,15 @@ a#footer-logo{
     #footer-buttons li a{
         padding: 0px 5px;
         font-size: 14px;
+    }
+
+    /*Newsletter section*/
+    #newsletter-form #email{
+        width: 300px;
+    }
+    
+    #newsletter-form #submit{
+        width: 250px;
     }
 }
 
