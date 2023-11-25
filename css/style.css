@@ -722,6 +722,12 @@ a#footer-logo{
     #newsletter-form #submit{
         width: 250px;
     }
+
+    #footer-buttons{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 
