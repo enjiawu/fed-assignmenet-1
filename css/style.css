@@ -27,6 +27,15 @@ h1{
     letter-spacing: 40px;
 }
 
+h2{
+    margin: 20px auto;
+    font-family: "Radio Canada";
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 10px;
+}
+
 /*General Button Design for featured componenets in home page*/
 .listen-now-button, .more-merch-button, .see-more-button, .more-music-button{
     display: flex;
@@ -380,6 +389,64 @@ main{
 }
 
 /*Newsletter*/
+#newsletter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(153, 176, 241);
+    width: 100%;
+    height: auto;
+    padding: 60px 0 80px 0;
+}
+
+#newsletter-form{
+    margin-top: 40px;
+}
+
+#newsletter-form #email{
+    width: 400px;
+    height: 20px;
+    border: none;
+    background: none;
+    padding: 10px 15px;
+    border-bottom: 1px solid black;
+}
+
+#newsletter-form #email::placeholder{
+    color: white;
+    opacity: 0.9;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+#newsletter-form #submit{
+    margin-left: 20px;
+    width: 250px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: white;
+    color: rgb(153, 176, 241);
+    font-size: 20px;
+    font-family: "Roboto Mono";
+    letter-spacing: 7px;
+    font-weight: 700;
+    transition: 0.15s;
+}
+
+#newsletter-form #submit:hover{
+    background-color: rgb(153, 176, 241);
+    color: white;
+    outline: 2px solid black;
+} 
+
+#newsletter-form #submit:active{
+    background-color: white;
+    color: rgb(153, 176, 241);
+    outline: 2px solid black;
+}
 
 
 /*Footer*/
@@ -387,7 +454,7 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: rgb(153, 176, 241);
+    background-color: rgb(248, 238, 225);
     color: black;
     line-height: 50px;
     width: 100%;
