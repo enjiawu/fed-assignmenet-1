@@ -359,7 +359,7 @@ main{
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    flex: 1 1 25%; /*Make it equal size*/
+    flex: 1; /*Make it equal size*/
 }
 
 .tour-date-details p{
@@ -369,7 +369,6 @@ main{
     letter-spacing: 2px;
     line-height: 25px; 
     padding: 0px 15px 5px 15px;
-    height: auto;
     margin-top: 0;
     margin-bottom: 15px;
     align-content: flex-start;
@@ -618,6 +617,22 @@ label{
 .watch-laufey-now-button{
     width: 75%;
     margin: 30px auto 80px auto;
+}
+
+#tour-merch{
+    margin-bottom: 80px;
+}
+
+/*Tour Page*/
+#tour-picture-container img{
+    width: 100%;
+}
+
+#tour-dates-container{
+    display: flex;
+    width: 80%; 
+    margin: 90px auto;
+    justify-content: center;
 }
 
 /*Mobile view*/
