@@ -38,3 +38,9 @@ window.addEventListener("resize", function(){
         NavContainer.style.backgroundColor = "rgb(153, 176, 241)"; //Changing the color back to the original
     }
 });
+
+//Newsletter Popup
+function CloseNewsletter(){
+    var NewsletterPopup = document.getElementById("newsletter-popup"); //Getting the newsletter popup
+    NewsletterPopup.style.display = "none"; //Hiding the newsletter popup
+}

@@ -55,7 +55,7 @@ h2{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    background-color: rgb(153, 176, 241);
+    background-color: #eb7b6a;
     color: black;
     position: fixed;
     line-height: 75px;
@@ -245,6 +245,7 @@ a#footer-logo{
 .more-merch-button:active, .more-music-button:active{
     background-color: rgb(153, 176, 241);
 }
+
 
 /*Start of website content*/
 /*Desktop view*/
@@ -587,6 +588,37 @@ main{
     background-color: white;
     color: rgb(153, 176, 241);
     outline: 2px solid black;
+}
+
+/*Newsletter pop up*/
+#newsletter-popup{
+    background-color: rgb(66, 81, 122);
+    position: fixed; /*Make it fixed on the page*/
+    top: 30%; /*Make it aligned to the center*/
+    left: 10%;
+    width: 80%;
+    height: 40%;
+    z-index: 100001;
+    display: flex; /*Make the pop up disappear*/
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+    border-radius: 7px;
+}
+
+#newsletter-popup #close-popup-button{
+    position: absolute;
+    top: 2%; /*Aligning it at the top right*/
+    right: 1%;
+    background: none; /*Removing the background and making the button as thin as possible*/
+    border: none;
+    color: white;
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+#newsletter-popup h2{ /*Changing the margin for the newsletter popup header*/
+    margin: 0;
 }
 
 /*Contact Page*/
@@ -949,6 +981,20 @@ label{
         font-size: 17px; /*Make font-size smaller so the words dont come out of the button JUST FOR THE MUSIC HTML PAGE*/
         letter-spacing: 7px;
     }
+
+    #newsletter-popup #email{ /*Make all newsletter popup elements smaller*/
+        width: 200px;
+    }
+
+    #newsletter-popup #email::placeholder{
+        width: 200px;
+        font-size: 15px;
+    }
+
+    #newsletter-popup #submit{
+        width: 180px;
+        font-size: 18px;
+    }
 }
 
 
@@ -965,11 +1011,11 @@ label{
     }
 
     /*Newsletter section*/
-    #newsletter-form #email{
+    #newsletter #newsletter-form #email{
         width: 300px;
     }
     
-    #newsletter-form #submit{
+    #newsletter #newsletter-form #submit{
         width: 250px;
     }
 
@@ -1018,17 +1064,35 @@ label{
         margin-right: 5px;
     }
 
-    #newsletter-form #email{
+    #newsletter #newsletter-form #email{ /*Make all newsletter elements smaller*/
         width: 220px;
     }
 
-    #newsletter-form #email::placeholder{
+    #newsletter #newsletter-form #email::placeholder{
         font-size: 15px;
+    }
+
+    #newsletter-popup #email{
+        width: 150px;
+    }
+
+    #newsletter-popup #email::placeholder{
+        width: 150px;
+        font-size: 10px;
+    }
+
+    #newsletter-popup #submit{
+        width: 150px;
+        font-size: 15px;
+    }
+
+    #newsletter h2{
+        font-size: 18px;
+        
     }
 
     #footer-socialmedia-buttons img, #nav-socialmedia-buttons img{
         padding: 0 2px;
         margin: 0;
-    }
-    
+    }  
 }  
