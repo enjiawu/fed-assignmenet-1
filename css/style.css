@@ -528,7 +528,7 @@ main{
 
 /*Contact Page*/
 #contact-form{
-    margin: 70px auto;
+    margin: 70px auto 70px auto;
     width: 60%;
     display: flex;
     justify-content: center;
@@ -541,14 +541,14 @@ label{
 }
 
 #contact-form #name, #contact-form #email{
-    width: 100%;
+    width: 95%; /*To account for extra padding*/
     padding: 10px 15px;
     margin-bottom: 15px;
 }
 
 #contact-form #message{
     margin-top: 20px;
-    width: 100%;
+    width: 95%; /*To account for extra padding*/
     padding: 10px 15px 200px 15px;
 }
 
@@ -560,12 +560,13 @@ label{
 }
 
 #contact-form #submit{
-    width: 100%;
+    width: 95%; /*To account for extra padding*/
     margin: 30px 15px;
     background-color: white;
     color: black;
     outline: 2px solid black;
     letter-spacing: 30px;
+    padding-left: 30px;
 }
 
 #contact-form #submit:hover{
@@ -665,6 +666,10 @@ label{
         padding-left: 0;
         flex: 2;
         order: 2;
+    }
+
+    #navigation-buttons li{
+        margin: 0;
     }
 
     #nav-socialmedia-buttons{
@@ -835,6 +840,7 @@ label{
     h1{
         font-size: 50px;
         letter-spacing: 10px;
+        padding-left: 10px; /*To make it centralised because letter-spacing makes it move to the right*/
     }
 
     #footer-buttons li a{
@@ -862,6 +868,12 @@ label{
         width: 30px;
         height: 30px;
     }
+
+    #contact-form #submit{
+        font-size: 18px;
+        letter-spacing: 15px;
+        padding-left: 15px;
+    }
 }
 
 
@@ -870,11 +882,16 @@ label{
     h1{
         font-size: 40px;
         letter-spacing: 8px;
+        padding-left: 8px; /*To make it centralised because letter-spacing makes it move to the right*/
+    }
+
+    h2{
+        font-size: 18px;
     }
 
     .listen-now-button{
         line-height: 40px;
-        font-size: 19px;
+        font-size: 15px;
         bottom: -65px;
         letter-spacing: 12px;
     }
@@ -883,6 +900,19 @@ label{
         width: 300px;
         height: 150px;
         margin-right: 5px;
+    }
+
+    #newsletter-form #email{
+        width: 220px;
+    }
+
+    #newsletter-form #email::placeholder{
+        font-size: 15px;
+    }
+
+    #footer-socialmedia-buttons img, #nav-socialmedia-buttons img{
+        padding: 0 2px;
+        margin: 0;
     }
     
 }  
