@@ -38,7 +38,7 @@ h2{
     padding-left: 10px; /*To make it centralised because letter-spacing makes it move to the right*/
 }
 
-#submit{
+#submit, .submit{
     height: 40px;
     border: none;
     cursor: pointer;
@@ -548,14 +548,14 @@ main{
     padding: 60px 0 80px 0;
 }
 
-#newsletter-form{
+#newsletter-form, #newsletter-popup-form{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 40px;
 }
 
-#newsletter-form #email{
+#newsletter-form .email, #newsletter-popup-form .email{
     width: 400px;
     height: 20px;
     border: none;
@@ -564,27 +564,27 @@ main{
     border-bottom: 1px solid black;
 }
 
-#newsletter-form #email::placeholder{
+#newsletter-form .email::placeholder, #newsletter-popup-form .email::placeholder{
     color: white;
     opacity: 0.9;
     font-size: 18px;
     letter-spacing: 2px;
 }
 
-#newsletter-form #submit{
+#newsletter-form .submit,  #newsletter-popup-form .submit{
     width: 250px;
     background-color: white;
     color: rgb(153, 176, 241);
     margin-left: 20px;
 }
 
-#newsletter-form #submit:hover{
+#newsletter-form .submit:hover,  #newsletter-popup-form .submit:hover{
     background-color: rgb(153, 176, 241);
     color: white;
     outline: 2px solid black;
 } 
 
-#newsletter-form #submit:active{
+#newsletter-form .submit:active, #newsletter-popup-form .submit:active{
     background-color: white;
     color: rgb(153, 176, 241);
     outline: 2px solid black;
@@ -901,19 +901,19 @@ label{
     }
 
     /*Newsletter section*/
-    #newsletter-form{
+    #newsletter-form,  #newsletter-popup-form{
         flex-direction: column;
     }
 
-    #newsletter-form #email{
+    #newsletter-form .email, #newsletter-popup-form .email{
         margin-bottom: 20px;
     }
     
-    #newsletter-form #email::placeholder{
+    #newsletter-form .email::placeholder, #newsletter-popup-form .email::placeholder{
         text-align: center;
     }
     
-    #newsletter-form #submit{
+    #newsletter-form .submit, #newsletter-popup-form .submit{
         width: 350px;
         margin: 0;
     }
@@ -982,16 +982,16 @@ label{
         letter-spacing: 7px;
     }
 
-    #newsletter-popup #email{ /*Make all newsletter popup elements smaller*/
+    #newsletter-popup .email{ /*Make all newsletter popup elements smaller*/
         width: 200px;
     }
 
-    #newsletter-popup #email::placeholder{
+    #newsletter-popup .email::placeholder{
         width: 200px;
         font-size: 15px;
     }
 
-    #newsletter-popup #submit{
+    #newsletter-popup .submit{
         width: 180px;
         font-size: 18px;
     }
@@ -1011,11 +1011,11 @@ label{
     }
 
     /*Newsletter section*/
-    #newsletter #newsletter-form #email{
+    #newsletter #newsletter-form .email{
         width: 300px;
     }
     
-    #newsletter #newsletter-form #submit{
+    #newsletter #newsletter-form .submit{
         width: 250px;
     }
 
@@ -1064,24 +1064,24 @@ label{
         margin-right: 5px;
     }
 
-    #newsletter #newsletter-form #email{ /*Make all newsletter elements smaller*/
+    #newsletter #newsletter-form .email{ /*Make all newsletter elements smaller*/
         width: 220px;
     }
 
-    #newsletter #newsletter-form #email::placeholder{
+    #newsletter #newsletter-form .email::placeholder{
         font-size: 15px;
     }
 
-    #newsletter-popup #email{
+    #newsletter-popup .email{
         width: 150px;
     }
 
-    #newsletter-popup #email::placeholder{
+    #newsletter-popup .email::placeholder{
         width: 150px;
         font-size: 10px;
     }
 
-    #newsletter-popup #submit{
+    #newsletter-popup .submit{
         width: 150px;
         font-size: 15px;
     }
