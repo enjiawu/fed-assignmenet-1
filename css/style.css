@@ -17,6 +17,10 @@ a{
     text-decoration: none;
 }
 
+iframe{
+    border: none; /*Remove iframe border for youtube videos*/
+}
+
 h1{
     margin: auto;
     padding-top: 40px;
