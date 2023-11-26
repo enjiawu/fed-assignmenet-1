@@ -434,7 +434,6 @@ main{
 }
 
 
-
 #tour-dates-container{
     display: flex;
     justify-content: center;
@@ -658,14 +657,60 @@ label{
     margin-bottom: 80px;
 }
 
+/*Music Page*/
+#music-html{
+    display: flex; /*Turn the page into a flexbox*/
+    justify-content: center; /*Center contents*/
+    flex-direction: column; /*Make contents into column*/
+    margin-bottom: 50px; /*Give some space from the bottom*/
+}
+
+#music-html .listen-now-button{
+    position: static; /*Make position default again*/
+}
+
+.album-title{
+    margin: 0; /*Remove margins*/
+    font-size: 28px; /*Increase font size to make readability easier*/
+    letter-spacing: 5px; /*Space letters out a bit*/
+}
+
+#album-1, #album-2, #album-3, #album-4{
+    display: flex; /*Turn main album containers into flex box*/
+    margin: 60px auto; /*Give them margin from the top so that they are spaced out*/
+    flex: 1; /*Make the sure album sections are all equal height and width*/
+    width: 90%; /*Make them only take up 90% of the page*/
+}
+
+.album-picture-container{
+    flex: 1 1 45%; /*Make picture container take 45% of flex box*/
+    margin-right: 20px; /*Give it some space from the album details*/
+}
+
+.album-picture-container img{
+    width: 100%; /*Make picture take up the whole available width*/
+}
+
+.album-details{
+    flex: 1 1 55%; /*Make album details take up remaining space of the flex box*/
+}
+
+.album-info{
+    margin-bottom: 30px; /*Give album info some space from the listen now button*/
+}
+
+.album-info li{
+    line-height: 26px; /*Make album info items more spaced out and easier to read*/
+}
+
 /*Mobile view*/
 @media (max-width: 900px){
     h1{
-        font-size: 60px;
+        font-size: 60px; /*Make font-size smaller so it fits the screen*/
     }
 
     h2{
-        font-size: 30px;
+        font-size: 30px; /*Make font-size smaller so it fits the screen*/
     }
 
     #nav-container {
@@ -808,6 +853,7 @@ label{
     
     #newsletter-form #submit{
         width: 350px;
+        margin: 0;
     }
 
     #about-laufey-info{
@@ -860,6 +906,19 @@ label{
         padding-left: 10px; /*To make it centralised because letter-spacing makes it move to the right*/
     }
 
+    .album-title{
+        font-size: 20px; /*Make font-size smaller*/
+    }
+
+    .album-info li{
+        line-height: 20px; /*Make album info items less spaced outd*/
+        font-size: 15px; /*Make font size smaller*/
+    }
+
+    #music-html .listen-now-button{
+        font-size: 17px; /*Make font-size smaller so the words dont come out of the button JUST FOR THE MUSIC HTML PAGE*/
+        letter-spacing: 7px;
+    }
 }
 
 
