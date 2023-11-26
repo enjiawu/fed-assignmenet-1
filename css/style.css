@@ -276,7 +276,7 @@ main{
     left: 5%; /*Centering the button horizontally*/
 }
 
-/*Featured merch section*/
+/*Featured merch section and Merch Page*/
 .featured-merch{
     margin-top: 85px;
     background-color: rgb(153, 176, 241);
@@ -286,7 +286,7 @@ main{
     padding-bottom: 20px;
 }
 
-.featured-merch-container{
+.featured-merch-container, .all-merch-container{
     display: flex;
     flex-direction: row;
     margin: 0 30px;
@@ -299,12 +299,16 @@ main{
     flex: 1 1 15%;
 }
 
+.merch-items p{
+    height: 100px; /*Making the p heights all equal*/
+}
+
 .merch-items img{
-    max-width: 100%;
+    max-width: 100%; /*Making sure the image fills up the container*/
 }
 
 .merch-details{
-    font-family: Caveat;
+    font-family: "Caveat"; 
     margin: 0;
     padding: 0;
     font-size: 25px;
@@ -316,11 +320,37 @@ main{
     font-weight: bolder;
 }
 
-.more-merch-button{
+.more-merch-button{  /*More Merch Button for Home Page*/
     margin: 25px auto;
     display: block;
     background-color: rgb(153, 176, 241);
 }
+
+#merch-html{
+    display: flex; /*Make the entire merch html page a flex box*/
+    flex-direction: column; /*Arrange all the sections in a column*/
+}
+
+#merch-html .featured-merch{
+    margin-top: 0; /*Remove the margin at the top of the page*/
+    background-color: white; /*Change the background color to white*/
+    margin-bottom: 100px; /*Give some space from the all merch section*/
+}
+
+#all-merch{
+    margin-bottom: 100px;
+}
+
+.all-merch-container{
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.all-merch-container .merch-items{
+    flex: 1 1 33%;
+    margin-bottom: 30px;
+}
+
 
 /*Featured Tour Section and Tour Page*/
 #featured-tour{
@@ -1002,4 +1032,3 @@ label{
     }
     
 }  
- 
