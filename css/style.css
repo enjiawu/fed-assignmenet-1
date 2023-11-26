@@ -1,5 +1,5 @@
 /*Setting default for respective elements*/
-body{
+body{ 
     margin: 0px;
     padding: 0px;
     font-family: "Roboto Mono";
@@ -42,7 +42,7 @@ h2{
     padding-left: 10px; /*To make it centralised because letter-spacing makes it move to the right*/
 }
 
-#submit, .submit{
+#submit, .submit{ /*For All Submit Buttons in Forms*/
     height: 40px;
     border: none;
     cursor: pointer;
