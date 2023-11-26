@@ -17,6 +17,10 @@ a{
     text-decoration: none;
 }
 
+iframe{ /*Removing iframe border*/
+    border: none;
+}
+
 h1{
     margin: auto;
     padding-top: 40px;
