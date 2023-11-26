@@ -629,11 +629,11 @@ label{
     width: 100%;
 }
 
-#tour-dates-container{
-    display: flex;
-    width: 80%; 
-    margin: 90px auto;
-    justify-content: center;
+#featured-about-photos img{
+    width: 100%;
+    height: auto;
+    max-height: 770px; /*Make sure all images equal height*/
+    object-fit: cover;
 }
 
 /*Mobile view*/
@@ -831,6 +831,11 @@ label{
 
     .buy-tickets-button{
         margin-left: 0;
+    }
+
+    h1{
+        letter-spacing: 10px;
+        padding-left: 10px; /*To make it centralised because letter-spacing makes it move to the right*/
     }
 
 }
