@@ -308,8 +308,14 @@ main{
     height: 100px; /*Making the p heights all equal*/
 }
 
+.merch-items a{
+    display: flex;
+    justify-content: center;
+}
+
 .merch-items img{
     max-width: 100%; /*Making sure the image fills up the container*/
+
 }
 
 .merch-details{
