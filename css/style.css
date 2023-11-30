@@ -59,7 +59,7 @@ h2{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    background-color: #eb7b6a;
+    background-color: #ec6262;
     color: black;
     position: fixed;
     line-height: 75px;
@@ -233,7 +233,7 @@ a#footer-logo{
 }
 
 .listen-now-button:hover, .see-more-button:hover, .watch-laufey-now-button:hover{
-    background-color: rgb(153, 176, 241);
+    background-color: #f09c8f;
     border: 3px solid rgb(66, 66, 66);
 }
 
@@ -247,7 +247,7 @@ a#footer-logo{
 }
 
 .more-merch-button:active, .more-music-button:active{
-    background-color: rgb(153, 176, 241);
+    background-color: #f09c8f;
 }
 
 
@@ -284,7 +284,7 @@ main{
 /*Featured merch section and Merch Page*/
 .featured-merch{
     margin-top: 85px;
-    background-color: rgb(153, 176, 241);
+    background-color: #f09c8f;
     width: 100%;
     height: auto;
     padding-top: 30px;
@@ -328,7 +328,7 @@ main{
 .more-merch-button{  /*More Merch Button for Home Page*/
     margin: 25px auto;
     display: block;
-    background-color: rgb(153, 176, 241);
+    background-color: #f09c8f;
 }
 
 #merch-html{
@@ -428,19 +428,19 @@ main{
 }
 
 .buy-tickets-button{
-    background-color: rgb(153, 176, 241);
+    background-color: #f09c8f;
     letter-spacing: 5px;
 }
 
 .buy-tickets-button:hover{
-    color: rgb(153, 176, 241);
+    color: #f09c8f;
     background-color: white;
-    border: 3px solid rgb(153, 176, 241);
+    border: 3px solid #f09c8f;
 }
 
 .buy-tickets-button:active{
     color: white;
-    background-color: rgb(153, 176, 241);
+    background-color: #f09c8f;
 }
 
 .see-more-button{
@@ -453,19 +453,19 @@ main{
 }
 
 .join-waiting-list-button{
-    background-color: rgb(24, 37, 75);
+    background-color: rgb(156, 57, 27);
     letter-spacing: 1px;
 }
 
 .join-waiting-list-button:hover{
-    color: rgb(24, 37, 75);
+    color: rgb(156, 57, 27);
     background-color: white;
-    border: 3px solid rgb(24, 37, 75);
+    border: 3px solid rgb(156, 57, 27);
 }
 
 .join-waiting-list-button:active{
     color: white;
-    background-color: rgb(24, 37, 75);
+    background-color: rgb(156, 57, 27);
 }
 
 
@@ -479,7 +479,7 @@ main{
 /*Featured Music and videos Section*/
 #featured-music, #featured-videos{
     margin-top: 60px;
-    background: rgb(153, 176, 241);
+    background: #f09c8f;
     width: 100%;
     height: auto;
     padding-top: 30px;
@@ -536,7 +536,7 @@ main{
 .more-music-button{
     display: flex;
     justify-content: center;
-    background-color: rgb(153, 176, 241);
+    background-color: #f09c8f;
     margin: 40px auto;
 }
 
@@ -546,7 +546,7 @@ main{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: rgb(153, 176, 241);
+    background: #f09c8f;
     width: 100%;
     height: auto;
     padding: 60px 0 80px 0;
@@ -578,25 +578,25 @@ main{
 #newsletter-form .submit,  #newsletter-popup-form .submit{
     width: 250px;
     background-color: white;
-    color: rgb(153, 176, 241);
+    color: #f09c8f;
     margin-left: 20px;
 }
 
 #newsletter-form .submit:hover,  #newsletter-popup-form .submit:hover{
-    background-color: rgb(153, 176, 241);
+    background-color: #f09c8f;
     color: white;
     outline: 2px solid black;
 } 
 
 #newsletter-form .submit:active, #newsletter-popup-form .submit:active{
     background-color: white;
-    color: rgb(153, 176, 241);
+    color: #f09c8f;
     outline: 2px solid black;
 }
 
 /*Newsletter pop up*/
 #newsletter-popup{
-    background-color: rgb(66, 81, 122);
+    background-color: rgb(163, 40, 40);
     position: fixed; /*Make it fixed on the page*/
     top: 30%; /*Make it aligned to the center*/
     left: 10%;
@@ -669,12 +669,12 @@ label{
 }
 
 #contact-form #submit:hover{
-    background-color: rgb(153, 176, 241);
+    background-color: #f09c8f;
     color: white;
 } 
 
 #contact-form #submit:active{
-    background-color: rgb(153, 176, 241);
+    background-color: #f09c8f;
     color: white;
     outline: none;
 }
