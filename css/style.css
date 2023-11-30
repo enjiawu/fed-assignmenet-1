@@ -581,12 +581,21 @@ main{
     letter-spacing: 2px;
 }
 
+#newsletter-popup-form .email::placeholder{
+    color: rgb(59, 55, 55);
+}
+
 #newsletter-form .submit,  #newsletter-popup-form .submit{
     width: 250px;
     background-color: white;
     color: #f09c8f;
     margin-left: 20px;
 }
+
+#newsletter-popup-form .submit{
+    color: rgb(59, 55, 55);
+}
+
 
 #newsletter-form .submit:hover,  #newsletter-popup-form .submit:hover{
     background-color: #f09c8f;
@@ -602,7 +611,7 @@ main{
 
 /*Newsletter pop up*/
 #newsletter-popup{
-    background-color: rgb(163, 40, 40);
+    background-color: rgb(250, 227, 198);
     position: fixed; /*Make it fixed on the page*/
     top: 30%; /*Make it aligned to the center*/
     left: 10%;
@@ -622,7 +631,7 @@ main{
     right: 1%;
     background: none; /*Removing the background and making the button as thin as possible*/
     border: none;
-    color: white;
+    color: black;
     font-size: 25px;
     font-weight: lighter;
 }
@@ -756,7 +765,7 @@ label{
 
 .album-picture-container{
     flex: 1 1 45%; /*Make picture container take 45% of flex box*/
-    margin-right: 20px; /*Give it some space from the album details*/
+    margin-right: 80px; /*Give it some space from the album details*/
 }
 
 .album-picture-container img{
