@@ -640,6 +640,15 @@ main{
     margin: 0;
 }
 
+#submitted-popup-form{
+    display: none;
+}
+
+#submitted-popup-form p{
+    font-size: 20px;
+    text-align: center;
+}
+
 /*Contact Page*/
 #contact-form{
     margin: 70px auto 70px auto;
@@ -935,6 +944,11 @@ label{
     #newsletter-form .submit, #newsletter-popup-form .submit{
         width: 350px;
         margin: 0;
+    }
+
+    #submitted-popup-form p{
+        font-size: 15px;
+        text-align: center;
     }
 
     #about-laufey-info{
