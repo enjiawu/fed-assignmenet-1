@@ -59,7 +59,7 @@ h2{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    background-color: #ec6262;
+    background-color: #ff7977;
     color: black;
     position: fixed;
     line-height: 75px;
@@ -235,7 +235,7 @@ a#footer-logo{
 
 /*Adding design to the buttons*/
 .listen-now-button:hover, .see-more-button:hover, .watch-laufey-now-button:hover{
-    background-color: #f09c8f;
+    background-color: rgb(253, 167, 151);
     border: 3px solid rgb(66, 66, 66);
 }
 
@@ -249,7 +249,7 @@ a#footer-logo{
 }
 
 .more-merch-button:active, .more-music-button:active{
-    background-color: #f09c8f;
+    background-color: rgb(253, 167, 151);
 }
 
 
@@ -286,7 +286,7 @@ main{
 /*Featured merch section and Merch Page*/
 .featured-merch{
     margin-top: 85px;
-    background-color: #f09c8f;
+    background-color: rgb(253, 167, 151);
     width: 100%;
     height: auto;
     padding-top: 30px;
@@ -336,7 +336,7 @@ main{
 .more-merch-button{  /*More Merch Button for Home Page*/
     margin: 25px auto;
     display: block;
-    background-color: #f09c8f;
+    background-color: rgb(253, 167, 151);
 }
 
 #merch-html{
@@ -437,19 +437,19 @@ main{
 
 /*Adding design to the buttons*/
 .buy-tickets-button{
-    background-color: #f09c8f;
+    background-color: rgb(253, 167, 151);
     letter-spacing: 5px;
 }
 
 .buy-tickets-button:hover{
-    color: #f09c8f;
+    color: rgb(253, 167, 151);
     background-color: white;
-    border: 3px solid #f09c8f;
+    border: 3px solid rgb(253, 167, 151);
 }
 
 .buy-tickets-button:active{
     color: white;
-    background-color: #f09c8f;
+    background-color: rgb(253, 167, 151);
 }
 
 .see-more-button{
@@ -491,7 +491,7 @@ main{
 /*Featured Music and videos Section*/
 #featured-music, #featured-videos{ /*Setting the size, position and design of the featured music and videos section*/
     margin-top: 60px;
-    background: #f09c8f;
+    background: rgb(253, 167, 151);
     width: 100%;
     height: auto;
     padding-top: 30px;
@@ -550,7 +550,7 @@ main{
 .more-music-button{
     display: flex;
     justify-content: center;
-    background-color: #f09c8f;
+    background-color: rgb(253, 167, 151);
     margin: 40px auto;
 }
 
@@ -560,7 +560,7 @@ main{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: #f09c8f;
+    background: rgb(253, 167, 151);
     width: 100%;
     height: auto;
     padding: 60px 0 80px 0;
@@ -596,7 +596,7 @@ main{
 #newsletter-form .submit,  #newsletter-popup-form .submit{ /*Changing the submit button design*/
     width: 250px;
     background-color: white;
-    color: #f09c8f;
+    color: rgb(253, 167, 151);
     margin-left: 20px;
 }
 
@@ -606,21 +606,28 @@ main{
 
 /*Adding effects to the newsletter submit button*/
 #newsletter-form .submit:hover,  #newsletter-popup-form .submit:hover{ 
-    background-color: #f09c8f;
+    background-color: rgb(253, 167, 151);
     color: white;
     outline: 2px solid black;
 } 
 
 #newsletter-form .submit:active, #newsletter-popup-form .submit:active{
     background-color: white;
-    color: #f09c8f;
+    color: rgb(253, 167, 151);
     outline: 2px solid black;
+}
+
+#submitted-newsletter-form{
+    display: none;
+    color: green;
+    margin: 30px 0 0 0;
 }
 
 /*Newsletter pop up*/
 #newsletter-popup{ /*Adding design to the newsletter popup*/
     display: flex; 
-    background-color: rgb(250, 227, 198);
+    background-color: #eed5ae;
+    border: 2px solid #97815d;
     position: fixed; /*Make it fixed on the page*/
     top: 30%; /*Make it aligned to the center*/
     left: 10%;
@@ -631,6 +638,7 @@ main{
     align-items: center;
     flex-direction: column;
     border-radius: 7px;
+    transition: 0.5s;
 }
 
 #newsletter-popup #close-popup-button{
@@ -654,7 +662,6 @@ main{
 
 #submitted-popup-form p{ /*Making sure the submitted form message is centered*/
     font-size: 20px;
-    text-align: center;
 }
 
 /*Contact Page*/
@@ -702,14 +709,27 @@ label{
 
 /*Adding effects to the submit button design*/
 #contact-form #submit:hover{
-    background-color: #f09c8f;
+    background-color: rgb(253, 167, 151);
     color: white;
 } 
 
 #contact-form #submit:active{
-    background-color: #f09c8f;
+    background-color: rgb(253, 167, 151);
     color: white;
     outline: none;
+}
+
+/*Contact form Submission Confirmation*/
+#submission-confirmation{
+    display: none;
+    padding: 5px 30px;
+    background-color:#ffe0ad;
+    border-radius: 10px;
+    border: 2px solid #bb9a66;
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%); /*Align it to the center of the page*/
 }
 
 /*About Page*/
