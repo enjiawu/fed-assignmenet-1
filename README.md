@@ -51,10 +51,11 @@ In conclusion, I designed this website to cater to all needs of users by featuri
 
 **3. Automatic Infinite Carousel for Music Albums and Videos** - Showcases Laufey's latest music albums and videos on the homepage. Users can hover over the carousel, click on albums or videos, and be redirected to the corresponding content.
 
-**4. Contact Form ** - Users have the option to communicate with Laufey through a contact form by entering their details and message, providing a convenient and user-friendly way to reach out and share feedback.
+**4. Contact Form** - Users have the option to communicate with Laufey through a contact form by entering their details and message, providing a convenient and user-friendly way to reach out and share feedback.
 
 ### Features left to implement
 **1. Enhanced Hover Effects for Images** 
+
 **2. Smooth visual transitions between sections or pages** 
 
 ## Technologies Used
