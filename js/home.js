@@ -17,18 +17,18 @@ function enableScroll(){
 if (NewsletterPopup.style.display != "none"){ //If the newsletter popup is active, so that it doesnt affect the other pages
     disableScroll(); //Disable scroll when newsletter popup is active
 }
- 
+
+function CloseNewsletter(){
+    enableScroll(); //Enable scroll when newsletter popup has been closed by user
+    NewsletterPopup.style.display='none'; //Closing the newsletter popup
+}
+
 function WelcomeMessage(){
     NewsletterText.style.display = "none"; //Hiding the newsletter text
     NewsletterPopupForm.style.display = "none"; //Hiding the newsletter form
     NewsletterPopupSubmittedMessage.style.display = "block"; //Showing the newsletter submitted message
     NewsletterPopup.style.backgroundColor = "rgb(255, 239, 219)"; //Changing the background color of the form to brighter beige
     ClosePopupButton.style.display = "none"; //Hiding the close button
-}
-
-function CloseNewsletter(){
-    enableScroll(); //Enable scroll when newsletter popup has been closed by user
-    NewsletterPopup.style.display='none'; //Closing the newsletter popup
 }
 
 NewsletterPopupForm.addEventListener('submit', function(event){ //When the form is submitted
