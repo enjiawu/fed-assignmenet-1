@@ -56,7 +56,7 @@ In conclusion, I designed this website to cater to all needs of users by featuri
 ### Features left to implement
 **1. Enhanced Hover Effects for Images** 
 
-**2. Smooth visual transitions between sections or pages** 
+**2. Smooth visual transitions between sections and pages** 
 
 ## Technologies Used
 **1. [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)**
