@@ -99,12 +99,12 @@ In conclusion, I designed this website to cater to all needs of users by featuri
 
 ### Media
 - The photos used in this site were obtained from:
-  http://laufeymusic.com
-  http://spotify.com
-  https://www.instagram.com/laufey/?hl=en
-  https://www.laufeymusic.com/book-club
+  - http://laufeymusic.com
+  - http://spotify.com
+  - https://www.instagram.com/laufey/?hl=en
+  - https://www.laufeymusic.com/book-club
   
 ### Acknowledgements
 - I received inspiration for this project from:
-  [Laufey Official Website](http://laufeymusic.com)
-  [Ruel Official Website](https://www.oneruel.com/)
+  - [Laufey Official Website](http://laufeymusic.com)
+  - [Ruel Official Website](https://www.oneruel.com/)
