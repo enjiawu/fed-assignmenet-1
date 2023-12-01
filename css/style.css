@@ -196,6 +196,7 @@ a#main-logo{
     height: 35px;
 }
 
+/*Aligning the copyright text*/
 #copyright{
     text-align: center;
 }
@@ -232,6 +233,7 @@ a#footer-logo{
     font-weight: 500;
 }
 
+/*Adding design to the buttons*/
 .listen-now-button:hover, .see-more-button:hover, .watch-laufey-now-button:hover{
     background-color: #f09c8f;
     border: 3px solid rgb(66, 66, 66);
@@ -267,7 +269,7 @@ main{
     height: auto;
 }
 
-.featured-video iframe{
+.featured-video iframe{ /*Positioning the video and making sure it fills the screen */
     position: absolute;
     top: 0;
     left:0;
@@ -275,7 +277,7 @@ main{
     height: 100%;
 }
 
-.listen-now-button{
+.listen-now-button{ /*Positioning the button to be fixed and centered*/
     position: absolute; 
     bottom: -70px; /*Positioning the button at the bottom of the container*/
     left: 5%; /*Centering the button horizontally*/
@@ -291,13 +293,13 @@ main{
     padding-bottom: 20px;
 }
 
-.featured-merch-container, .all-merch-container{
-    display: flex;
+.featured-merch-container, .all-merch-container{ 
+    display: flex; /*Making the featured merch container and all merch container flex boxes*/
     flex-direction: row;
     margin: 0 30px;
 }
 
-.merch-items{
+.merch-items{ /*Making the merch items flex boxes to easliy arrange them*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -308,7 +310,7 @@ main{
     height: 100px; /*Making the p heights all equal*/
 }
 
-.merch-items a{
+.merch-items a{ /*Making the image container link a flexbox so the image is responsive*/
     display: flex;
     justify-content: center;
 }
@@ -318,7 +320,7 @@ main{
 
 }
 
-.merch-details{
+.merch-details{ /*Adding design to the merch details*/
     font-family: "Caveat"; 
     margin: 0;
     padding: 0;
@@ -326,7 +328,7 @@ main{
     text-align: center;
 }
 
-.merch-details span{
+.merch-details span{ /*Making the title bigger and bolder*/
     font-size: 32px;
     font-weight: bolder;
 }
@@ -348,37 +350,37 @@ main{
     margin-bottom: 100px; /*Give some space from the all merch section*/
 }
 
-#all-merch{
+#all-merch{ /*Giving All Merch section space from the featured merch section on the merch page*/
     margin-bottom: 100px;
 }
 
-.all-merch-container{
+.all-merch-container{ 
     margin-top: 50px;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /*Making sure that the items wrap when the screen size gets smaller*/
 }
 
-.all-merch-container .merch-items{
-    flex: 1 1 33%;
+.all-merch-container .merch-items{ 
+    flex: 1 1 33%; /*Making all the merch items in the all merch container the same size*/
     margin-bottom: 30px;
 }
 
 
 /*Featured Tour Section and Tour Page*/
-#featured-tour{
+#featured-tour{ 
     background-color: white;
     margin-top: 10px;
     padding-top: 30px;
     padding-bottom: 20px;
 }
 
-#featured-tour-container{
+#featured-tour-container{ /*Making the featured tour container a flex box*/
     display: flex;
     flex-direction: row;
     margin: 20px 40px;
     flex: 1 1 15%;
 }
 
-.tour-items{
+.tour-items{ /*Making the tour items a flex box*/
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -390,12 +392,12 @@ main{
     margin-right: 20px;
 }
 
-.tour-title{
+.tour-title{ /*Aligning the tour title*/
     text-align: left;
     margin: 0 40px;
 }
 
-.tour-date-details{
+.tour-date-details{ /*Making the tour date details the same size and a flex box to arrange the contents*/
     flex: 1;
     display: flex;
     flex-direction: row;
@@ -403,7 +405,7 @@ main{
     align-items: flex-start;
 }
 
-.tour-date-details p{
+.tour-date-details p{ /*Adding design and positioning all the text for the details*/
     flex: 1; /*Make it all equal size */
     font-size: 16px;
     font-weight: bolder;
@@ -416,12 +418,12 @@ main{
     align-content: flex-start;
 }
 
-.tour-date-details p span{
+.tour-date-details p span{ /*Making the additional info smaller and lighter*/
     font-size: 14px;
     font-weight: lighter;
 }
 
-.buy-tickets-button, .join-waiting-list-button{
+.buy-tickets-button, .join-waiting-list-button{ /*Making the buttons equal size as the tour date details p, aligning them and adding design*/
     flex:1;
     color: white;
     padding: 10px 40px;
@@ -433,6 +435,7 @@ main{
     transition: 0.15s;
 }
 
+/*Adding design to the buttons*/
 .buy-tickets-button{
     background-color: #f09c8f;
     letter-spacing: 5px;
@@ -454,11 +457,11 @@ main{
 }
 
 /*Tour Page*/
-#tour-picture-container img{
-    width: 100%;
+#tour-picture-container img{ /*Tour picture container for poster image*/
+    width: 100%; /*Making sure it stretches and fills the screen*/
 }
 
-.join-waiting-list-button{
+.join-waiting-list-button{ /*Adding the design for the join waiting list buttons*/
     background-color: rgb(156, 57, 27);
     letter-spacing: 1px;
 }
@@ -474,16 +477,19 @@ main{
     background-color: rgb(156, 57, 27);
 }
 
-
-#tour-dates-container{
+#tour-dates-container{/*Container for all tour dates in the tour date page*/
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 100px auto;
 }
 
+#tour-merch{ /*Giving the tour merch some space fromr the tour details*/
+    margin-bottom: 80px;
+}
+
 /*Featured Music and videos Section*/
-#featured-music, #featured-videos{
+#featured-music, #featured-videos{ /*Setting the size, position and design of the featured music and videos section*/
     margin-top: 60px;
     background: #f09c8f;
     width: 100%;
@@ -492,12 +498,12 @@ main{
     padding-bottom: 20px;
 }
 
-#featured-videos{
+#featured-videos{ /*Changing the featured video section background colod to white*/
     background: rgb(255, 255, 255);
     margin: 0px;
 }
 
-#featured-music-wrapper, #featured-videos-wrapper{
+#featured-music-wrapper, #featured-videos-wrapper{ 
     width: 100%;
     margin-top:30px;
     white-space: nowrap; /*Make sure the pictures will not wrap around*/
@@ -509,24 +515,25 @@ main{
     animation: slider infinite 8s linear; /* Make animation infinite and change the speed and make the speed constant*/
 }
 
+/*Using keyframes to animate the pictures to make them an infinite automatic slider*/
 @keyframes slider { /*Changing the position using animation*/
     from {
       transform: translateX(0); /*Shifting to the start*/
     }
     to {
-      transform: translateX(-100%); 
+      transform: translateX(-100%); /*Shifitng to -100%*/
     }
 }
 
-.featured-music-items-carousell img{
-    height: 400px;
+.featured-music-items-carousell img{ 
+    height: 400px; /*Making the images equal size*/
     width: 400px;
     object-fit: cover; /*Make sure it covers the entire area of the container*/
     margin-right: 15px; /*Give some space between the pictures*/
 }
 
 .featured-videos-carousell iframe{
-    width: 750px;
+    width: 750px; /*Making the videos equal size*/
     height: 420px;
     margin-right: 20px; /*Give some space between the pictures*/
 }
@@ -539,6 +546,7 @@ main{
     animation-play-state:paused;
 }
 
+/*Adding design to the more music button*/
 .more-music-button{
     display: flex;
     justify-content: center;
@@ -547,7 +555,7 @@ main{
 }
 
 /*Newsletter*/
-#newsletter{
+#newsletter{ /*Making the newsletter section a flex box, aligning the position and adding design*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -558,14 +566,14 @@ main{
     padding: 60px 0 80px 0;
 }
 
-#newsletter-form, #newsletter-popup-form{
+#newsletter-form, #newsletter-popup-form{ /*Making the form a flexbox and centering all the items*/
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 40px;
 }
 
-#newsletter-form .email, #newsletter-popup-form .email{
+#newsletter-form .email, #newsletter-popup-form .email{ /*Adding design and changing the size of the email section of the form*/
     width: 400px;
     height: 20px;
     border: none;
@@ -574,30 +582,30 @@ main{
     border-bottom: 1px solid black;
 }
 
-#newsletter-form .email::placeholder, #newsletter-popup-form .email::placeholder{
+#newsletter-form .email::placeholder, #newsletter-popup-form .email::placeholder{ /*Changing the email placeholder design*/
     color: white;
     opacity: 0.9;
     font-size: 18px;
     letter-spacing: 2px;
 }
 
-#newsletter-popup-form .email::placeholder{
+#newsletter-popup-form .email::placeholder{ /*Changing the email placeholder design*/
     color: rgb(59, 55, 55);
 }
 
-#newsletter-form .submit,  #newsletter-popup-form .submit{
+#newsletter-form .submit,  #newsletter-popup-form .submit{ /*Changing the submit button design*/
     width: 250px;
     background-color: white;
     color: #f09c8f;
     margin-left: 20px;
 }
 
-#newsletter-popup-form .submit{
+#newsletter-popup-form .submit{ /*Changing the submit button design*/
     color: rgb(59, 55, 55);
 }
 
-
-#newsletter-form .submit:hover,  #newsletter-popup-form .submit:hover{
+/*Adding effects to the newsletter submit button*/
+#newsletter-form .submit:hover,  #newsletter-popup-form .submit:hover{ 
     background-color: #f09c8f;
     color: white;
     outline: 2px solid black;
@@ -610,7 +618,8 @@ main{
 }
 
 /*Newsletter pop up*/
-#newsletter-popup{
+#newsletter-popup{ /*Adding design to the newsletter popup*/
+    display: flex; 
     background-color: rgb(250, 227, 198);
     position: fixed; /*Make it fixed on the page*/
     top: 30%; /*Make it aligned to the center*/
@@ -618,7 +627,6 @@ main{
     width: 80%;
     height: 40%;
     z-index: 100001;
-    display: flex; /*Make the pop up disappear*/
     justify-content: center; 
     align-items: center;
     flex-direction: column;
@@ -626,7 +634,7 @@ main{
 }
 
 #newsletter-popup #close-popup-button{
-    position: absolute;
+    position: absolute; /*Make sure that it is at the top right and doesnt push other elements down*/
     top: 2%; /*Aligning it at the top right*/
     right: 1%;
     background: none; /*Removing the background and making the button as thin as possible*/
@@ -640,17 +648,17 @@ main{
     margin: 0;
 }
 
-#submitted-popup-form{
+#submitted-popup-form{ /*Making the submitted message after submitting the form none*/
     display: none;
 }
 
-#submitted-popup-form p{
+#submitted-popup-form p{ /*Making sure the submitted form message is centered*/
     font-size: 20px;
     text-align: center;
 }
 
 /*Contact Page*/
-#contact-form{
+#contact-form{ /*Aligning content form section and making it a flex box*/
     margin: 70px auto 70px auto;
     width: 60%;
     display: flex;
@@ -659,30 +667,30 @@ main{
     flex-direction: column;
 }
 
-label{
+label{ 
     margin-bottom: 10px;
 }
 
-#contact-form #name, #contact-form #email{
+#contact-form #name, #contact-form #email{ /*Making sure the name and email sections are equal width*/
     width: 95%; /*To account for extra padding*/
     padding: 10px 15px;
     margin-bottom: 15px;
 }
 
-#contact-form #message{
+#contact-form #message{ /*Making sure the message section is equal width with the names and email section*/
     margin-top: 20px;
     width: 95%; /*To account for extra padding*/
     padding: 10px 15px 200px 15px;
 }
 
-#contact-form #email::placeholder, #contact-form #message::placeholder, #contact-form #name::placeholder{
+#contact-form #email::placeholder, #contact-form #message::placeholder, #contact-form #name::placeholder{ /*Changing the placeholders for all contact form inputs*/
     color: black;
     opacity: 0.9;
     font-size: 14px;
     letter-spacing: 2px;
 }
 
-#contact-form #submit{
+#contact-form #submit{ /*Changing the submit button design*/
     width: 95%; /*To account for extra padding*/
     margin: 30px 15px;
     background-color: white;
@@ -692,6 +700,7 @@ label{
     padding-left: 30px;
 }
 
+/*Adding effects to the submit button design*/
 #contact-form #submit:hover{
     background-color: #f09c8f;
     color: white;
@@ -704,48 +713,46 @@ label{
 }
 
 /*About Page*/
-#featured-about-photos{
+#featured-about-photos{ /*Making the featured about photos container a flex box*/
     display: flex;
     width: 100%;
     justify-content: center;
     gap: 7px; /*Give the images space in between*/
 }
 
-#featured-about-photos img{
+#featured-about-photos img{ 
     width: 100%;
     height: auto;
     max-height: 770px; /*Make sure all images equal height*/
     object-fit: cover;
 }
 
-#about-laufey-info{
+#about-laufey-info{ /*Adjusting the size, position and design of the about laufey information*/
     width: 65%;
     margin: 70px auto;
     font-size: 18px;
     line-height: 25px;
 }
 
-#featured-about-video{
+#featured-about-video{ /*Making the video responsive and centered*/
     display: flex;
     flex-direction: column;
     width: 100%;
     justify-content: center;
 }
 
-#featured-about-video iframe{
+#featured-about-video iframe{ 
     margin: auto;
     width: 60%;
     height: 450px;
 }
 
-.watch-laufey-now-button{
+.watch-laufey-now-button{ /*Positioning the watch laufey now button*/
     width: 75%;
     margin: 30px auto 80px auto;
 }
 
-#tour-merch{
-    margin-bottom: 80px;
-}
+
 
 /*Music Page*/
 #music-html{
@@ -804,9 +811,9 @@ label{
     }
 
     #nav-container {
-        flex-direction: column;
+        flex-direction: column; /*Changing the direction from row to column so it fits the mobile screen*/
         text-align: center;
-        justify-content: space-between;
+        justify-content: space-between; /*Giving them some space between*/
         margin: auto;
         height: 65px; /*Make Nav Bar shorter in height*/
         line-height: 65px;
@@ -899,8 +906,8 @@ label{
     }
 
     .featured-merch-container{ /*Make the merch items wrap and stay in the middle*/
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-wrap: wrap; /*Making sure the featured merch contents wrap over*/
+        justify-content: center; 
     }    
 
     .merch-items{ /*Change the size of the merch items*/
@@ -917,20 +924,20 @@ label{
     }
 
     /*Featured music section*/
-    .featured-music-items-carousell img{
-        width: 250px;
+    .featured-music-items-carousell img{ 
+        width: 250px; /*Making thhe music images smaller to fit the screen*/
         height: 250px;
     }
 
     /*Featured video section*/
     .featured-videos-carousell iframe{
-        width: 500px;
+        width: 500px; /*Making the videos smaller to fit the screen*/
         height: 300px;
     }
 
     /*Newsletter section*/
-    #newsletter-form,  #newsletter-popup-form{
-        flex-direction: column;
+    #newsletter-form,  #newsletter-popup-form{ 
+        flex-direction: column; /*Changing the flex direction from row to column*/
     }
 
     #newsletter-form .email, #newsletter-popup-form .email{
@@ -963,14 +970,14 @@ label{
 
 }
 
-@media (max-width: 992px){ /*Get rid of the image*/
+@media (max-width: 992px){ /*Get rid of the image for featured tour container when it reaches 992px*/
     #featured-tour-container img{
         display: none;
     }
 }
 
-@media (max-width: 728px){ /*Make the tour date details centered*/
-    #featured-tour-container{
+@media (max-width: 728px){ 
+    #featured-tour-container{ /*Make the tour date details centered*/
         justify-content: center;
         align-items: center;
         margin-top: 65px;
@@ -1031,7 +1038,7 @@ label{
 }
 
 
-@media (max-width: 450px){
+@media (max-width: 450px){ /*Designs for even smaller screens of 450px*/
     h1{
         font-size: 50px;
         letter-spacing: 10px;

@@ -146,10 +146,11 @@
             </div>
         </section>
 
-        <section id = "featured-music">
-            <h1 class = "music-title">MUSIC</h1>
-            <div id = "featured-music-wrapper">
-                <div class = "featured-music-items-carousell"> <!--Need to repeat the images for seamless loop-->
+        <section id = "featured-music"> <!--Features music section that includes newly published music--> 
+            <h1 class = "music-title">MUSIC</h1> <!--Features music title--> 
+            <div id = "featured-music-wrapper"> <!--Featured music wrapper for featured music items carousell--> 
+                <!--To make it an ininfite loop that doesn't have any blank images, need to repeat the images for seamless loop-->
+                <div class = "featured-music-items-carousell"> 
                     <a href="https://laufey.ffm.to/bewitched" target="_blank"><img src="images/music/bewitched.jpeg" alt="Bewitched Album"></a>
                     <a href="https://laufey.ffm.to/eikaldeluxe" target="_blank"><img src="images/music/everything-i-know-about-love.jpeg" alt="Everything I Know About Love Album"></a>
                     <a href="https://laufey.ffm.to/christmasdreaming" target="_blank"><img src="images/music/a-very-laufey-holiday.jpeg" alt="A Very Laufey Holiday! Album"></a>
@@ -168,14 +169,15 @@
                     <a href="https://beabadoobee.ffm.to/anighttoremember" target="_blank"><img src="images/music/a-night-to-remember.jpg" alt="A Night To Remember Album"></a>
                 </div>
             </div>
-            <a class = "more-music-button" href = "html/music.html"> 
+            <a class = "more-music-button" href = "html/music.html">  <!--More music button that leads to music page-->
                 MORE MUSIC
             </a>
         </section>
-
-        <section id = "featured-videos">
-            <h1 class = "videos-title">VIDEOS</h1>
-            <div id = "featured-videos-wrapper">
+ 
+        <section id = "featured-videos"> <!--Featured videos section that includes newly published videos-->
+            <h1 class = "videos-title">VIDEOS</h1> <!--Featured videos title-->
+            <div id = "featured-videos-wrapper"> <!--Featured music wrapper for featured music items carousell--> 
+                <!--To make it an ininfite loop that doesn't have any blank images, need to repeat the images for seamless loop-->
                 <div class = "featured-videos-carousell">
                     <iframe src="https://www.youtube.com/embed/lSD_L-xic9o?si=9SP8mvfur13lxUok&amp;controls=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen rel="noopener noreferrer"></iframe>
                     <iframe src="https://www.youtube.com/embed/KUNcP1H7Wi4?si=IbpnPXdK4eJZMkLF&amp;controls=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -187,33 +189,33 @@
                     <iframe src="https://www.youtube.com/embed/z2PzxLwA4rM?si=NZvHhBS_fOPgGl9A&amp;controls=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
             </div>
-            <a class = "see-more-button" target="_blank" href = "https://www.youtube.com/channel/UChpKl3waLmccNeYH9LGYjUQ"> 
+            <a class = "see-more-button" target="_blank" href = "https://www.youtube.com/channel/UChpKl3waLmccNeYH9LGYjUQ"> <!--See more button that leads users to Luafey's youtube channel--> 
                 SEE MORE
             </a>
         </section>
 
-        <section id = "newsletter">
+        <section id = "newsletter"> <!--Newsletter section to allow users to sign up for newsletter-->
             <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
-            <form id = "newsletter-form">
+            <form id = "newsletter-form"> <!--Newsletter form for users to fill in their information and submit-->
                 <input type="email" name="email" class="email" placeholder="YOUR EMAIL ADDRESS" required>
                 <input type="submit" value="SUBMIT" class="submit">
             </form>
         </section>
       
-        <section id = "newsletter-popup">
-            <button id="close-popup-button" onclick = "CloseNewsletter()">x</button>
+        <section id = "newsletter-popup"> <!--Newsletter popup that appears when the website loads-->
+            <button id="close-popup-button" onclick = "CloseNewsletter()">x</button> <!--Close button that closes the popup-->
             <h2 id = "newsletter-h2">SUBSCRIBE TO OUR NEWSLETTER</h2>
-            <form id = "newsletter-popup-form">
+            <form id = "newsletter-popup-form"> 
                 <input type="email" name="email" class="email" placeholder="YOUR EMAIL ADDRESS" required>
                 <input type="submit" value="SUBMIT" class="submit">
             </form>
-            <div id = "submitted-popup-form">
+            <div id = "submitted-popup-form"> <!--Submitted message that appears after user has filled in the newsletter popup form-->
                 <p>Welcome to the Laufey Communtiy!</p>
             </div>
         </section>
     </main>
 
-    <footer id = "footer-container">
+    <footer id = "footer-container"> <!--Footer section that includes copyright, footer buttons and social media buttons-->
         <a id = "footer-logo" href="index.html">LAUFEY</a>
         <p id = "copyright">Copyright &copy; 2023</p>
 
@@ -237,7 +239,7 @@
 
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="js/main.js"></script> <!--Javascript file link-->
 </body>
 
 </html>

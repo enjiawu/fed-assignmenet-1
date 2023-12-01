@@ -50,7 +50,10 @@ function enableScroll(){
     document.body.style.overflow = "scroll"; //Enabling the scroll
 }
 
-disableScroll(); //Disable scroll when newsletter popup is active
+if (NewsletterPopup.style.display != "none"){ //If the newsletter popup is active, so that it doesnt affect the other pages
+    disableScroll(); //Disable scroll when newsletter popup is active
+    console.log("Scroll Disabled");
+}
  
 function WelcomeMessage(){
     NewsletterText.style.display = "none"; //Hiding the newsletter text
